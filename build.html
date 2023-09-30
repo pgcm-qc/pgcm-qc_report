@@ -9,8 +9,8 @@
     <style>
         body {
             position: relative;
-            height: 26vh;
-            margin: 4rem;
+            height: 20vh;
+            margin: 0rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -19,9 +19,9 @@
         .upper-buttons,
         .lower-buttons {
             display: flex;
-            border: outset rgb(186, 176, 176);
+          
             justify-content: space-between;
-            padding: 40px;
+            padding: 10px;
             background-color: rgb(255, 255, 255);
         }
 
@@ -55,9 +55,9 @@
 
 
 
-        h1{font-size: 30px; color: rgb(255, 255, 255);text-align: center;}
+        h1{font-size: 5px; color: rgb(255, 255, 255);text-align: center;}
 
-        h2{font-size: 25px; color: rgb(0, 0, 0);text-align: left; font-weight: 900;}
+        h2{font-size: 20px; color: rgb(0, 0, 0);text-align: left; font-weight: 900;}
 
   
         .sidetext{background-color: rgb(98, 98, 98); font-family: 'Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 35px;}
@@ -76,27 +76,31 @@
 }
 
 
-.upper-buttons {
+.report_buttons {
     display: flex;
-    border: outset rgb(186, 176, 176);
+    border: outset rgb(255, 255, 255);
     justify-content: space-between;
     align-items: center; /* Center vertically */
-    padding: 30px;
-    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: rgb(224, 224, 224);
 }
 
-.upper-buttons a {
+.report_buttons a {
     display: flex;
     align-items: center; /* Center vertically */
     text-decoration: none; /* Remove underline for the link */
 }
 
-.upper-buttons h1 {
+.report_buttons a img{
+height: 40px;
+}
+
+.report_buttons h1 {
     font-family: 'Artifakt Element Bold', sans-serif;
     font-weight: 900;
-    font-size: 45px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
-    margin-left: 30px; /* Adjust the margin as needed to separate text from image */
+    margin-left: 35px; /* Adjust the margin as needed to separate text from image */
 }
 
 
@@ -110,7 +114,7 @@
     <div class="header2"><h1 class="sidetext">Hi, your report is below! 👇🏽 :)</h1></div>
 
 
-    <div class="upper-buttons">
+    <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
             <img src="acc_issues_icon.png" alt="Issues Button" height="80" >
             <h1 class="module_index">I s s u e s</h1>
@@ -118,7 +122,7 @@
     </div>
 
 
-    <div class="upper-buttons">
+    <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
             <img src="acc_forms_icon.png" alt="Forms Button" height="80" >
             <h1 class="module_index">F o r m s</h1>
@@ -126,7 +130,7 @@
     </div>
 
 
-    <div class="upper-buttons">
+    <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
             <img src="acc_correspondence_icon.png" alt="Correspondence Button" height="80" >
             <h1 class="module_index">C o r r e s p o n d e n c e</h1>
@@ -134,10 +138,17 @@
     </div>
 
 
-    <div class="upper-buttons">
+    <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
-            <img src="acc_submittals_icon.png" alt="Issues Button" height="80" >
+            <img src="acc_submittals_icon.png" alt="Submittals Button" height="80" >
             <h1 class="module_index">S u b m i t t a l s</h1>
+        </a>
+    </div>
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="acc_rfi_icon.png" alt="RFIs Button" height="80" >
+            <h1 class="module_index">R F I s</h1>
         </a>
     </div>
     
