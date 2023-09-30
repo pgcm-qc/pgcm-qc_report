@@ -25,9 +25,17 @@
             background-color: rgb(255, 255, 255);
         }
 
-        .button img {
+        .top_header {
+            display: flex;
+          
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgb(197, 197, 197);
+        }
+
+        .memorandum_application img {
             width: auto;  /* Maintain aspect ratio */
-            height: 60px; /* Set your desired height */
+            height: 30px; /* Set your desired height */
         }
 
 
@@ -78,7 +86,8 @@
 
 .report_buttons {
     display: flex;
-    border: outset rgb(255, 255, 255);
+    /* border: outset rgb(255, 255, 255); */
+      border: solid rgb(255, 255, 255);
     justify-content: space-between;
     align-items: center; /* Center vertically */
     padding: 10px;
@@ -103,15 +112,61 @@ height: 40px;
     margin-left: 35px; /* Adjust the margin as needed to separate text from image */
 }
 
+.button-link {
+    display: inline-block;
+    padding: 0px 40px 5px 50px;
+    background-color: rgb(224, 224, 224); /* Button background color */
+    color: #613535; /* Text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
 
-.module_index{font-family: 'Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 35px; color: rgb(0, 0, 0);}
+.button-link:hover {
+    background-color: #ffffff; /* Change the background color on hover */
+}
+
+
+.module_index{font-family: 'Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 35px; color: rgb(0, 0, 0); text-decoration: none;}
 
     </style>
 </head>
 
 <body>
+    <div class="top_header">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9"
+            class="memorandum_application">
+            <img src="app_pgcm_logo.png" alt="PGCM Logo">
+        </a>
+
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9"
+            class="memorandum_application">
+            <img src="app_pge_logo.png" alt="Power BI Button">
+        </a>
+    </div>
+    
     <div class="main_header"><img id="imageid" src="albert333.png" alt="333 Albert Street, Waterloo, Ontario"></div>
     <div class="header2"><h1 class="sidetext">Hi, your report is below! 👇🏽 :)</h1></div>
+
+
+
+       <!-- ############################ -->
+
+
+
+    <div class="button-link">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="acc_issues_icon.png" alt="Issues Button" height="45" >
+            <h1 class="module_index">I s s u e s</h1>
+        </a>
+    </div>
+
+
+
+
+   <!-- ############################ -->
+
+
 
 
     <div class="report_buttons">
@@ -153,7 +208,7 @@ height: 40px;
     </div>
     
 
-    <div class="lower-buttons">
+    <!-- <div class="lower-buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9"
             class="button">
             <img src="https://th.bing.com/th/id/OIP.Oxo-u9GMK3zbEM5h-FiVnQHaEK?pid=ImgDet&rs=1" alt="Power BI Button">
@@ -163,7 +218,7 @@ height: 40px;
             class="button">
             <img src="https://th.bing.com/th/id/OIP.Oxo-u9GMK3zbEM5h-FiVnQHaEK?pid=ImgDet&rs=1" alt="Power BI Button">
         </a>
-    </div>
+    </div> -->
 
 </body>
 
