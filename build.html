@@ -10,7 +10,7 @@
         body {
             position: relative;
             height: 26vh;
-            margin: 5;
+            margin: 4rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -32,34 +32,49 @@
 
 
 
-        @font-face {
-  font-family: 'YourFontName';
-  src: url('ArtifaktElement-Regular.woff2') format('woff2');
-  /* Add additional font formats if necessary */
-  font-weight: normal;
-  font-style: normal;
-}
-body {
-  font-family: 'YourFontName', sans-serif;
-}
+    @font-face {
+    font-family: 'Artifakt Element Regular';
+    src: url('ArtifaktElement-Regular.woff2') format('woff2');
+    font-weight: lighter; /* or 'bold' if applicable */
+    font-style: normal; /* or 'italic' if applicable */
+    }
 
-.header{background-color: rgb(98, 98, 98);}
-h1{font-size: 35px; color: white;text-align: center;}
+
+    @font-face {
+    font-family: 'Artifakt Element Bold';
+    src: url('ArtifaktElement-Bold.woff2') format('woff2');
+    font-weight: bold; /* or 'bold' if applicable */
+    font-style: normal; /* or 'italic' if applicable */
+    }
+
+    
+
+        .main_header {font-family: 'Artifakt Element Bold', sans-serif; background-color: rgb(197, 197, 197); height: 400px;}
+
+        .header2{background-color: rgb(98, 98, 98); font-family: 'Artifakt Element Regular', sans-serif; }
+
+
+
+        h1{font-size: 30px; color: rgb(255, 255, 255);text-align: center;}
+
+        h2{font-size: 25px; color: rgb(0, 0, 0);text-align: left; font-weight: 900;}
+
+  
+        .sidetext{background-color: rgb(98, 98, 98); font-family: 'Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 35px;}
+
+
 
     </style>
 </head>
 
 <body>
-    <div class="header"><h1>Hi, your report is here! :)</h1></div>
+    <div class="main_header"><img src="albert333.png" alt="333 Albert Street, Waterloo, Ontario"></div>
+    <div class="header2"><h1 class="sidetext">Correspondence Hi, your report is here! :)</h1></div>
+
     <div class="upper-buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9"
             class="button">
             <img src="correspondence.png" alt="Power BI Button">
-        </a>
-
-        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg4MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9"
-            class="button">
-            <img src="https://th.bing.com/th/id/OIP.Oxo-u9GMK3zbEM5h-FiVnQHaEK?pid=ImgDet&rs=1" alt="Power BI Button">
         </a>
     </div>
 
