@@ -9,7 +9,7 @@
     <style>
         body {
             position: relative;
-            height: 20vh;
+            height: 10vh;
             margin: 0rem;
             display: flex;
             flex-direction: column;
@@ -27,18 +27,22 @@
 
         .top_header {
             display: flex;
-          
             justify-content: space-between;
             padding: 10px;
             background-color: rgb(197, 197, 197);
         }
+
+        #top_text{font-size: 20px; font-family: 'Artifakt Element Regular'; color: #b0b1b3;}
 
         .memorandum_application img {
             width: auto;  /* Maintain aspect ratio */
             height: 30px; /* Set your desired height */
         }
 
-
+        .memorandum_application img #qr{
+            width: auto;  /* Maintain aspect ratio */
+            height: 40px; /* Set your desired height */
+        }
 
     @font-face {
     font-family: 'Artifakt Element Regular';
@@ -68,7 +72,7 @@
         h2{font-size: 20px; color: rgb(0, 0, 0);text-align: left; font-weight: 900;}
 
   
-        .sidetext{background-color: rgb(98, 98, 98); font-family: 'Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 35px;}
+        .main_text{background-color: rgb(98, 98, 98); font-family: 'Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 25px;}
 
         .main_header {
     max-width: 100%; /* Set the maximum width of the container */
@@ -83,11 +87,15 @@
     height: auto; /* Allow the image to maintain its aspect ratio */
 }
 
+#qr-image {
+    height: 60px;
+}
 
 .report_buttons {
     display: flex;
     /* border: outset rgb(255, 255, 255); */
       border: solid rgb(255, 255, 255);
+    border-radius: 20px; /* Rounded corners */
     justify-content: space-between;
     align-items: center; /* Center vertically */
     padding: 10px;
@@ -126,6 +134,9 @@ height: 40px;
     background-color: #ffffff; /* Change the background color on hover */
 }
 
+.report_buttons:hover {
+    background-color: #ffffff; /* Change the background color on hover */
+}
 
 .module_index{font-family: 'Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 35px; color: rgb(0, 0, 0); text-decoration: none;}
 
@@ -134,39 +145,24 @@ height: 40px;
 
 <body>
     <div class="top_header">
-        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9"
+        <a 
             class="memorandum_application">
             <img src="app_pgcm_logo.png" alt="PGCM Logo">
         </a>
-
-        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9"
+<h1 id="top_text"> 333 Albert Street </h1>
+        <!-- <a 
             class="memorandum_application">
             <img src="app_pge_logo.png" alt="Power BI Button">
-        </a>
+        </a> -->
+
+        <a 
+        class="memorandum_application">
+        <img src="app_qr.png" alt="QR Sharing app" style="height: 60px;">
+    </a>
     </div>
     
     <div class="main_header"><img id="imageid" src="albert333.png" alt="333 Albert Street, Waterloo, Ontario"></div>
-    <div class="header2"><h1 class="sidetext">Hi, your report is below! 👇🏽 :)</h1></div>
-
-
-
-       <!-- ############################ -->
-
-
-
-    <div class="button-link">
-        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
-            <img src="acc_issues_icon.png" alt="Issues Button" height="45" >
-            <h1 class="module_index">I s s u e s</h1>
-        </a>
-    </div>
-
-
-
-
-   <!-- ############################ -->
-
-
+    <div class="header2"><h1 class="main_text">Hi, your report is below! :)</h1></div>
 
 
     <div class="report_buttons">
