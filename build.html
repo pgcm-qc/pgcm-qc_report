@@ -62,13 +62,24 @@
   
         .sidetext{background-color: rgb(98, 98, 98); font-family: 'Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 35px;}
 
+        .main_header {
+    max-width: 100%; /* Set the maximum width of the container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set the container height to fill the viewport height */
+}
 
+.main_header img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Allow the image to maintain its aspect ratio */
+}
 
     </style>
 </head>
 
 <body>
-    <div class="main_header"><img src="albert333.png" alt="333 Albert Street, Waterloo, Ontario"></div>
+    <div class="main_header"><img id="imageid" src="albert333.png" alt="333 Albert Street, Waterloo, Ontario"></div>
     <div class="header2"><h1 class="sidetext">Correspondence Hi, your report is here! :)</h1></div>
 
     <div class="upper-buttons">
