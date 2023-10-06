@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Buttons</title>
+    <style>
+        body {
+            position: relative;
+            height: 1vh;
+            margin: 0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rgb(148, 148, 148);
+        }
+
+        /* .upper-buttons, */
+        /* .lower-buttons {
+            display: flex;
+          
+            justify-content: space-between;
+            padding: 1px;
+            background-color: rgb(255, 255, 255);
+        } */
+
+        .top_header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgb(197, 197, 197);
+        }
+
+        #top_text{font-size: 10px; font-family: './fonts_and_common_media/Artifakt Element Regula'; color: #a1a1a1;}
+
+        .memorandum_application img {
+            width: auto;  /* Maintain aspect ratio */
+            height: 35px; /* Set your desired height */
+        }
+
+    @font-face {
+    font-family: './fonts_and_common_media/Artifakt Element Regular';
+    src: url('./fonts_and_common_media/ArtifaktElement-Regular.woff2') format('woff2');
+    font-weight: lighter; /* or 'bold' if applicable */
+    font-style: normal; /* or 'italic' if applicable */
+    }
+
+
+    @font-face {
+    font-family: './fonts_and_common_media/Artifakt Element Bold';
+    src: url('./fonts_and_common_media/ArtifaktElement-Bold.woff2') format('woff2');
+    font-weight: bold; /* or 'bold' if applicable */
+    font-style: normal; /* or 'italic' if applicable */
+    }
+
+    
+
+        .main_header {font-family: './fonts_and_common_media/Artifakt Element Bold', sans-serif; background-color: rgb(197, 197, 197); height: 200px;}
+
+        .header2{background-color: rgb(148, 148, 148); font-family: './fonts_and_common_media/Artifakt Element Regular', sans-serif; height: 50px; }
+
+
+
+        h1{font-size: 5px; color: rgb(224, 224, 224);text-align: center;}
+
+        /* h2{font-size: 20px; color: rgb(0, 0, 0);text-align: left; font-weight: 900;} */
+
+  
+        .main_text{font-family: './fonts_and_common_media/Artifakt Element Regular', sans-serif; font-weight: 100; font-size: 20px;}
+
+        .main_header {
+    max-width: 100%; /* Set the maximum width of the container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set the container height to fill the viewport height */
+}
+
+.main_header img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Allow the image to maintain its aspect ratio */
+}
+
+/* #qr-image {
+    height: 60px;
+} */
+
+.report_buttons {
+    display: flex;
+    /* border: solid rgb(101, 102, 105); */
+    border-radius: 20px; /* Rounded corners */
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 1px 1px 1px 10px;
+    background-color: rgb(224, 224, 224);
+    margin: 4px; /* Adjust margin as needed */
+}
+
+.report_buttons a {
+    display: flex;
+    align-items: center; /* Center vertically */
+    text-decoration: none; /* Remove underline for the link */
+    width: 100%; /* Make the entire div clickable */
+}
+
+.report_buttons a img{
+height: 40px;
+}
+
+.report_buttons h1 {
+    font-family: './fonts_and_common_media/Artifakt Element Bold', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(148, 148, 148);
+    margin-left: 35px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 0px 40px 5px 50px;
+    background-color: rgb(224, 224, 224); /* Button background color */
+    color: #613535; /* Text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.button-link:hover {
+    background-color: #ffffff; /* Change the background color on hover */
+}
+
+.report_buttons:hover {
+    background-color: #ffffff; /* Change the background color on hover */
+}
+
+.module_index{font-family: './fonts_and_common_media/Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 35px; color: rgb(0, 0, 0); text-decoration: none;}
+
+/* ######################################## */
+
+.bottom-text {
+    position: bottom;
+    bottom: 0;
+    font-family: './fonts_and_common_media/Artifakt Element Regular', sans-serif; 
+    font-weight: 100; 
+    font-size: 9px; 
+    text-decoration: none;
+    /* width: 100%; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    position: fixed;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    /* padding: 1px; */
+}
+
+
+/* ############################################ */
+
+
+
+
+    </style>
+</head>
+
+
+<!-- ########################################################################################################################
+######################################################################################################################## -->
+
+<body>
+    <div class="top_header">
+        <a 
+            class="memorandum_application">
+            <img src="./fonts_and_common_media/app_pgcm_logo.png" alt="PGCM Logo">
+        </a>
+<h1 id="top_text"> 333 Albert St </h1>
+        <!-- <a 
+            class="memorandum_application">
+            <img src="app_pge_logo.png" alt="Power BI Button">
+        </a> -->
+
+        <a 
+        class="memorandum_application">
+        <img src="./333_albert/app_qr_333_albert.png" alt="QR Sharing app" style="height: 60px;">
+    </a>
+    </div>
+    
+    <div class="main_header"><img id="imageid" src="./333_albert/albert333.png" alt="333 Albert Street, Waterloo, Ontario"></div>
+    <div class="header2"><h1 class="main_text">Hi, your report is below. :)</h1></div>
+
+<!-- ############################### -->
+
+
+
+<!-- ############################### -->
+
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="./333_albert/acc_issues_icon.png" alt="Issues Button" height="80" >
+            <h1 class="module_index">I s s u e s</h1>
+        </a>
+    </div>
+
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="./333_albert/acc_forms_icon.png" alt="Forms Button" height="80" >
+            <h1 class="module_index">F o r m s</h1>
+        </a>
+    </div>
+
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="./333_albert/acc_correspondence_icon.png" alt="Correspondence Button" height="80" >
+            <h1 class="module_index">C o r r e s p o n d e n c e</h1>
+        </a>
+    </div>
+
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="./333_albert/acc_submittals_icon.png" alt="Submittals Button" height="80" >
+            <h1 class="module_index">S u b m i t t a l s</h1>
+        </a>
+    </div>
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="./333_albert/acc_rfi_icon.png" alt="RFIs Button" height="80" >
+            <h1 class="module_index">R F I s</h1>
+        </a>
+    </div>
+
+   <div>
+    <p class="bottom-text">Prica Group Construction Management Inc</p>
+</div>
+
+</body>
+
+</html>
